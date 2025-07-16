@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes Map</title>
+  </head>
+  <body>
+    <img src="../img/2.webp" alt="foto-key-chain" usemap="#tes" />
+
+    <map name="tes" id="cursor">
+      <area
+        alt="ayano"
+        title="ayano"
+        onclick="funFoto('ayano')"
+        coords="28,210,185,441"
+        shape="rect"
+      />
+      <area
+        alt="kei"
+        title="kei"
+        onclick="funFoto('kei')"
+        coords="218,208,372,444"
+        shape="rect"
+      />
+      <area
+        alt="suzune"
+        title="suzune"
+        onclick="funFoto('suzune')"
+        coords="416,210,570,440"
+        shape="rect"
+      />
+      <area
+        alt="kikyo"
+        title="kikyo"
+        onclick="funFoto('kikyo')"
+        coords="625,211,779,440"
+        shape="rect"
+      />
+      <area
+        alt="honami"
+        title="honami"
+        onclick="funFoto('honami')"
+        coords="818,212,969,440"
+        shape="rect"
+      />
+      <area
+        alt="arisu"
+        title="arisu"
+        onclick="funFoto('arisu')"
+        coords="29,647,184,872"
+        shape="rect"
+      />
+      <area
+        alt="hiyori"
+        title="hiyori"
+        onclick="funFoto('hiyori')"
+        coords="230,640,383,869"
+        shape="rect"
+      />
+      <area
+        alt="kakeru"
+        title="kakeru"
+        onclick="funFoto('kakeru')"
+        coords="421,643,572,870"
+        shape="rect"
+      />
+      <area
+        alt="manabu"
+        title="manabu"
+        onclick="funFoto('manabu')"
+        coords="626,640,779,868"
+        shape="rect"
+      />
+    </map>
+
+    <script>
+      function funFoto(name) {
+        alert(name);
+      }
+
+      let box = document.getElementById("cursor");
+
+      box.addEventListener("mouseenter", function () {
+        box.style.cursor = "pointer";
+      });
+
+      box.addEventListener("mouseleave", function () {
+        box.style.cursor = "default";
+      });
+    </script>
+  </body>
+</html>
