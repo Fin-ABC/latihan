@@ -41,13 +41,21 @@
             @apply -rotate-45;
         }
 
+        .hero-role{
+            @apply py-1 px-3 border-1 border-white rounded-full text-sm font-extralight
+        }
+
+        .hero-btn{
+            @apply rounded-lg py-1 px-2
+        }
+
 
     </style>
 </head>
 
 <body
     class="font-inknut bg-[url(img/bg-perpus-light.png)] bg-fixed bg-cover bg-center dark:bg-[url(img/bg-perpus-dark.png)]">
-    <!-- Navbar -->
+    <!-- Navbar Start-->
     <nav
         class="bg-gradient-to-b from-slate-900 from-80% via-slate-900/50 via-90% to-slate-900/0 to-95% fixed top-0 left-0 w-full z-50">
         <div class="flex justify-between items-center h-16 md:h-20 lg:h-24 pr-5 pl-1 text-white">
@@ -141,6 +149,32 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section -->
+    <div class=" mt-20 mx-auto ">
+        <div class="m-5">
+            <img class="rounded-full object-cover overflow-hidden size-45 mx-auto" src="img/maomao.jpg"
+                alt="foto-profil">
+        </div>
+        <div class="bg-slate-700/30 text-white mx-auto w-10/12 p-2 rounded-xl">
+            <div class="text-lg mb-2 font-bold">Hi, I'am Ahmad Saputra</div>
+            <div class="flex gap-2 mb-3 ">
+                <div class="hero-role">Develover</div>
+                <div class="hero-role">Student</div>
+            </div>
+            <div class="text-xs font-light mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nobis illo,
+                accusantium nam, consequatur molestiae quisquam dolore saepe totam, ipsam necessitatibus sit suscipit
+                voluptatum odio tempore soluta repellendus excepturi mollitia pariatur. Provident corrupti earum odit
+                fugiat non porro, inventore a ex laboriosam culpa nihil, officia quo suscipit natus facilis dolore?
+            </div>
+            <div class="flex gap-3">
+                <a href="#" class="hero-btn bg-white text-black">About me</a>
+                <a href="#" class="hero-btn border-2 text-white">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Home Section -->
 
     <script src="script.js"></script>
 </body>
