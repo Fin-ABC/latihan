@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-inknut: "Inknut Antiqua", sans-serif;
+  --font-indie: "Indie Flower", cursive;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.btn-link-navbar {
+  @apply select-none hover:text-slate-500 active:text-slate-700;
+}
+
+.btn-icon-navbar {
+  @apply fill-white flex size-6 cursor-pointer items-center my-auto hover:-translate-y-0.5 hover:fill-slate-300 active:fill-slate-500;
+}
+
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-white;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.hero-role {
+  @apply py-1 px-3 border-1 border-white rounded-full text-sm font-extralight;
+}
+
+.hero-btn {
+  @apply rounded-lg py-1 px-2;
+}
