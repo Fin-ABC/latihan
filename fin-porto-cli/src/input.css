@@ -39,5 +39,5 @@
 }
 
 .hero-btn {
-  @apply rounded-lg py-1 px-2;
+  @apply rounded-lg py-2 px-2.5 text-sm font-bold align-middle transition-all duration-300;
 }
