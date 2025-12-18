@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <title>Konversi Tipe Data</title>
+  </head>
+  <body>
+    <script>
+      let sampleString = "4.2";
+      let sampleString2 = "number";
+
+      // String to bilangan bulat
+      document.writeln(
+        `${4} + ${parseInt(sampleString)} = ${4 + parseInt(sampleString)}`
+      );
+      document.writeln("<br>");
+      // String to bilangan pecahan
+      document.writeln(
+        `${4} + ${parseFloat(sampleString)} = ${4 + parseInt(sampleString)}`
+      );
+      document.writeln("<br>");
+      // String to bilangan bulat atau pecahan
+      document.writeln(
+        `${4} + ${Number(sampleString)} = ${4 + parseInt(sampleString)}`
+      );
+
+    //   function isNaN() berfungsi untuk mengecek apakah variable tersebut adalah NaN atau bukan
+      document.writeln(`<p> ${isNaN(sampleString)} </p>`);
+      document.writeln(`<p> ${isNaN(sampleString2)} </p>`);
+    </script>
+  </body>
+</html>

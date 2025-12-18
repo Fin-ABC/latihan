@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+</head>
+<body>
+    <script>
+        let nama = prompt("Namamu siapa?");
+        let isNama = confirm(`Apakah kamu ${nama}?`);
+
+        if (isNama){
+            alert(`Selamat Datang ${nama}`);
+        } else{
+            alert(`Jadi, ${nama} bukan namamu ya :(`);
+        }
+
+        // Alert, Prompt, dan confirm
+        // alert, ngasih alert dari web
+        // prompt, ngasih alert yang meminta input string dari user
+        // confirm, ngasih alert yang meminta input boolean dari user
+    </script>
+</body>
+</html>
