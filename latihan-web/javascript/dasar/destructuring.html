@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring Array dan Object</title>
+  </head>
+  <body>
+    <script>
+      const names = ["Fin", "Sakayanagi"];
+      const person = [
+        {
+          firstName: "Arisu",
+          lastName: "Sakayanagi",
+          hobby: "Playing Chess",
+        },
+        {
+          firstName: "Fin",
+          lastName: "Artuqas",
+          hobby: "Playing Games",
+        },
+        {
+          firstName: "Naura",
+          lastName: "Airani",
+          hobby: "Reading Book",
+        },
+      ];
+
+      const [first, last, ...other] = names;
+      console.info(first);
+      console.info(last);
+
+      function myPerson({ firstName, lastName, hobby: hobi }) {
+        debugger;
+        console.info(`${firstName} ${lastName}`);
+        console.info(hobi);
+      }
+
+      for (const i in person) {
+        myPerson(person[i]);
+      }
+    </script>
+  </body>
+</html>
