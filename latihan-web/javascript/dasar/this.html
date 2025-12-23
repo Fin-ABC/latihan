@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This</title>
+  </head>
+  <body>
+    <script>
+      const students = [
+        {
+          class: "A",
+          firstName: "Fin",
+          lastName: "Artuqas",
+          get fullName() {
+            return `${this.firstName} ${this.lastName}`;
+          },
+          sayHello: function (value) {
+            return `${value}? namaku ${this.firstName} dari kelas ${this.class}, salam kenal ya`;
+          },
+        },
+        {
+          class: "B",
+          firstName: "Arisu",
+          lastName: "Sakayanagi",
+          get fullName() {
+            return `${this.firstName} ${this.lastName}`;
+          },
+          sayHello: function (value) {
+            return `Namaku ${this.firstName} dari kelas ${this.class}, salam kenal ya ${value}`;
+          },
+        },
+        {
+          class: "A",
+          firstName: "Naura",
+          lastName: "Airani",
+          get fullName() {
+            return `${this.firstName} ${this.lastName}`;
+          },
+          sayHello: function (value) {
+            return `Halo ${value}, namaku ${this.firstName} dari kelas ${this.class}`;
+          },
+        },
+      ];
+
+      for (const i in students) {
+        document.writeln(`<p>${students[i].sayHello("Agus")}</p>`);
+        console.info(students[i].fullName)
+      }
+    </script>
+  </body>
+</html>
