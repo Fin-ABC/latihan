@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Parameter</title>
+  </head>
+  <body>
+    <script>
+      let school = [
+        {
+          kelas: "A",
+          students: ["Sri", "Kuwi", "Afin"],
+        },
+        {
+          kelas: "B",
+          students: ["Jajang", "Epul", "Mari"],
+        },
+        {
+          kelas: "C",
+          students: ["Naura", "Raka", "Arisu"],
+        },
+      ];
+
+      function listStudent(...dataStudent) {
+        for (const data in dataStudent) {
+          const kelas = dataStudent[data].kelas;
+          document.writeln(`<h5>Data Siswa Kelas ${kelas}</h5>`);
+
+          const students = dataStudent[data].students;
+          document.writeln(`<ol>`);
+          for (const student in students) {
+            document.writeln(`<li>${students[student]}</li>`);
+          }
+          document.writeln("</ol>");
+        }
+      }
+
+      listStudent(...school);
+    </script>
+  </body>
+</html>

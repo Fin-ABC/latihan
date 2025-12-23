@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function selamatDatang(nama, time = "Pagi"){
+            return(`<p>Selamat Datang ${nama} dan selamat ${time} </p>`);
+        }
+
+        document.writeln(selamatDatang("Daki", "Malam"));
+        document.writeln(selamatDatang("Buri"));
+
+        let pagiBudi = selamatDatang("Budi");
+        document.writeln(`<p>${pagiBudi}</p>`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Generator</title>
+  </head>
+  <body>
+    <script>
+      function* angkaGanjil(value) {
+        for (i = 0; i <= value; i++) {
+          if (i % 2 === 1) {
+            yield i;
+          }
+        }
+      }
+
+      const result = angkaGanjil(50);
+      for (const index of result){
+        document.writeln(`<p>${index}</p>`)
+      }
+    </script>
+  </body>
+</html>

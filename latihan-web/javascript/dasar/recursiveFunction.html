@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursive Function</title>
+  </head>
+  <body>
+    <script>
+      function factorial(value) {
+        let result = 1;
+        for (let i = 1; i <= value; i++) {
+          result *= i;
+        }
+        return result;
+      }
+
+      document.writeln(`<p>${factorial(6)}</p>`);
+      document.writeln(`<p>${factorial(3)}</p>`);
+      document.writeln(`<p>${factorial(10)}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      // Normal Arrow Function
+      const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        document.writeln(`<p>${say}</p>`);
+      };
+
+      // Arrow Function tanpa block/kurung kurawal
+      const ucapanSelamat = (name, time) =>
+        document.writeln(`Selamat ${time} ${name}`);
+
+      // Arrow function tanpa kurung di parameter
+      // Khusus untuk 1 parameter
+      // kurang dari dan lebih dari satu wajib pake kurung
+      const kenalan = (name) => `Halo ${name} salam kenal yaa`;
+
+      sayHello("Arisu");
+      ucapanSelamat("Fin", "Pagi");
+      document.writeln(`<p>${kenalan("Naura")}</p>`);
+    </script>
+  </body>
+</html>
