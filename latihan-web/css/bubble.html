@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble - Powerfuff Girl</title>
+  </head>
+  <style>
+    .main {
+      background: #a1e2d7;
+      width: 500px;
+      height: 400px;
+      position: relative;
+      padding: 40px;
+    }
+    a {
+      display: inline-block;
+      background: #edeeb6;
+      width: 180px;
+      height: 150px;
+      border: 4px solid #000;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    eye {
+      display: flex;
+      justify-content: space-between;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      top: 25px;
+    }
+    eye > * {
+      border: 1px solid #000;
+      background: #fff;
+      width: 90px;
+      height: 100%;
+      border-radius: 50%;
+      transform: rotate(18deg);
+      position: absolute;
+      overflow: hidden;
+    }
+    eye > right {
+      left: -30px;
+    }
+    eye > left {
+      right: -5px;
+    }
+    a1 {
+      background: #a1e2d7;
+      display: flex;
+      width: 90%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    a2 {
+      background: #000;
+      display: flex;
+      width: 75%;
+      height: 90%;
+      border-radius: 50%;
+      position: relative;
+    }
+    a3,
+    a4 {
+      background: #fff;
+      display: flex;
+      width: 40%;
+      height: 50%;
+      border-radius: 50%;
+    }
+    a3 {
+      position: absolute;
+      top: 10px;
+      right: 21px;
+    }
+    a4 {
+      position: absolute;
+      top: 15px;
+      left: 5px;
+    }
+    mouth {
+      display: flex;
+      width: 45px;
+      height: 60px;
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-60%);
+      border-radius: 50%;
+      border-bottom: 5px solid #000;
+    }
+    hair1 {
+      position: absolute;
+      right: 0;
+      display: flex;
+      background: yellow;
+      width: 70%;
+      height: 50px;
+      border-bottom: 1px solid #000;
+      border-radius: 0 5% 40% 70%;
+      z-index: 9;
+    }
+    hair2 {
+      position: absolute;
+      transform: translateX(-45%);
+      display: flex;
+      background: yellow;
+      width: 60%;
+      height: 50px;
+      border-bottom: 1px solid #000;
+      border-radius: 0 0 70% 0%;
+      z-index: 10;
+    }
+    twintail > * {
+      display: flex;
+      position: absolute;
+      background: yellow;
+      width: 80px;
+      height: 60px;
+      border: 4px solid #000;
+      border-radius: 50% 50% 0%;
+      overflow: hidden;
+    }
+    /* twintail > *::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #a1e2d7;
+        border-radius: 50%;
+        left: 20;
+    } */
+    twintail > left {
+      left: 200px;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <twintail>
+        <right></right>
+        <left></left>
+      </twintail>
+      <a>
+        <hair1></hair1>
+        <hair2></hair2>
+        <eye>
+          <right>
+            <a1>
+              <a2>
+                <a3></a3>
+              </a2>
+            </a1>
+          </right>
+          <left>
+            <a1>
+              <a2>
+                <a4></a4>
+              </a2>
+            </a1>
+          </left>
+        </eye>
+        <mouth></mouth>
+      </a>
+    </div>
+  </body>
+</html>
